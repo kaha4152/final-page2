@@ -55,6 +55,10 @@ main {
     text-align: center;
     width: 250px;
     transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+    display: flex; /* Changed to flex for alignment */
+    flex-direction: column; /* Changed to column so image is on top and text at the bottom */
+    justify-content: space-between; /* Distributes content to have text at the bottom */
+    height: 350px; /* Added fixed height to ensure text is always at the bottom */
 }
 
 /* Hover Effect - Light Yellow Background */
@@ -77,6 +81,7 @@ main {
     font-size: 16px;
     font-weight: bold;
     color: #388E3C; /* Dark Green accent */
+    margin-top: auto; /* Added margin-top: auto to push price to the bottom */
 }
 
 /* Footer */
