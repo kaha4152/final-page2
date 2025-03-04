@@ -7,22 +7,24 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background-color: #A8E6A3; /* Light Green */
     color: #333; /* Darker text for contrast */
     padding: 20px;
     text-align: center;
-    position: relative; /* Added to enable absolute positioning for logo */
+    position: relative; /* This allows for absolute positioning within the header */
 }
 
 header .logo {
     position: absolute; /* Absolute positioning for the logo */
     top: 20px; /* Adjust the distance from the top */
-    left: 20px; /* Adjust the distance from the right */
+    left: 20px; /* Adjust the distance from the left */
     width: 50px; /* Set a fixed width for the logo */
     height: auto; /* Maintain the aspect ratio */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -62,21 +64,14 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
-    display: flex; /* Changed to flex for alignment */
-    flex-direction: column; /* Changed to column so image is on top and text at the bottom */
-    justify-content: space-between; /* Distributes content to have text at the bottom */
-    height: 350px; /* Added fixed height to ensure text is always at the bottom */
-}
-
-/* Hover Effect - Light Yellow Background */
-.product-item:hover {
-    background-color: #FFF9C4; /* Light Yellow */
+    display: flex; /* Changed to flex layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items at the start by default */
 }
 
 .product-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensure image takes up full width */
+    height: auto; /* Let image height adjust based on width */
     border-radius: 5px;
 }
 
@@ -89,7 +84,12 @@ main {
     font-size: 16px;
     font-weight: bold;
     color: #388E3C; /* Dark Green accent */
-    margin-top: auto; /* Added margin-top: auto to push price to the bottom */
+    margin-top: auto; /* Pushes the price to the bottom */
+}
+
+/* Hover Effect - Light Yellow Background */
+.product-item:hover {
+    background-color: #FFF9C4; /* Light Yellow */
 }
 
 /* Footer */
