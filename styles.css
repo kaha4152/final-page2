@@ -57,6 +57,7 @@ main {
     gap: 20px;
 }
 
+/* Product Item Styles */
 .product-item {
     background-color: white;
     padding: 15px;
@@ -64,28 +65,33 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
-    display: flex; /* Changed to flex layout */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Ensure description and price stay at fixed positions */
-    height: 350px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out evenly */
+    height: 400px; /* Set a fixed height for all cards */
 }
 
+/* Image Styles */
 .product-item img {
-    width: 100%; /* Ensure image takes up full width */
-    height: auto; /* Let image height adjust based on width */
+    width: 100%;
+    height: auto;
     border-radius: 5px;
+    margin-bottom: 10px; /* Ensures there's space between the image and description */
 }
 
+/* Product Description (h2) */
 .product-item h2 {
     font-size: 18px;
     margin: 10px 0;
 }
 
+/* Price Styles */
 .product-item p {
     font-size: 16px;
     font-weight: bold;
     color: #000; /* Changed to black */
-    margin-top: auto; /* Pushes the price to the bottom */
+    margin-top: auto; /* Pushes the price to the bottom of the card */
+    margin-bottom: 0; /* Ensure there's no margin below the price */
 }
 
 /* Hover Effect - Light Yellow Background */
