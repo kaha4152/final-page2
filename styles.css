@@ -66,7 +66,8 @@ main {
     width: 250px;
     display: flex; /* Changed to flex layout */
     flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start; /* Align items at the start by default */
+    justify-content: space-between; /* Ensure description and price stay at fixed positions */
+    height: 350px; /* Fixed height for consistency */
 }
 
 .product-item img {
