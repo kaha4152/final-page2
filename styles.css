@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -68,30 +69,33 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensures content is spaced out evenly */
-    height: 400px; /* Set a fixed height for all cards */
+    height: 500px; /* Fixed height for all product cards, large enough to fit the biggest image */
+    box-sizing: border-box; /* Makes sure padding is included in the total height */
 }
 
 /* Image Styles */
 .product-item img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Ensures there's space between the image and description */
+    max-height: 250px; /* Set a max height for the images so they don't stretch too much */
+    object-fit: cover; /* Ensures images maintain their aspect ratio and fill the space */
+    margin-bottom: 15px; /* Ensures space between image and description */
 }
 
 /* Product Description (h2) */
 .product-item h2 {
     font-size: 18px;
     margin: 10px 0;
+    flex-grow: 0; /* Prevent description from growing and pushing other content down */
 }
 
 /* Price Styles */
 .product-item p {
     font-size: 16px;
     font-weight: bold;
-    color: #000; /* Changed to black */
-    margin-top: auto; /* Pushes the price to the bottom of the card */
-    margin-bottom: 0; /* Ensure there's no margin below the price */
+    color: #000; /* Price color changed to black */
+    margin-top: auto; /* Ensures the price stays at the bottom of the card */
+    margin-bottom: 0; /* No margin below the price */
 }
 
 /* Hover Effect - Light Yellow Background */
