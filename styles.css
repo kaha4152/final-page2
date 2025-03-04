@@ -18,7 +18,7 @@ header {
 header .logo {
     position: absolute; /* Absolute positioning for the logo */
     top: 20px; /* Adjust the distance from the top */
-    right: 20px; /* Adjust the distance from the right */
+    left: 20px; /* Adjust the distance from the right */
     width: 50px; /* Set a fixed width for the logo */
     height: auto; /* Maintain the aspect ratio */
 }
