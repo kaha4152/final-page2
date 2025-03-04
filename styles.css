@@ -83,7 +83,7 @@ main {
 .product-item p {
     font-size: 16px;
     font-weight: bold;
-    color: #388E3C; /* Dark Green accent */
+    color: #000; /* Changed to black */
     margin-top: auto; /* Pushes the price to the bottom */
 }
 
